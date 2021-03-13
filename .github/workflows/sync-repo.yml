@@ -1,8 +1,6 @@
 name: 同步上游仓库
 on:
   workflow_dispatch: # 手动触发
-  schedule:
-    - cron: '0 8 */7 * *'
   watch:
     types: started
   repository_dispatch:
